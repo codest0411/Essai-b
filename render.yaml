@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: essai-backend
+    env: node
+    plan: free
+    region: oregon
+    runtime: node
+    repo: https://github.com/codest0411/Essai-b
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SUPABASE_URL
+        value: "REPLACE_WITH_SUPABASE_URL"
+      - key: SUPABASE_ANON_KEY
+        value: "REPLACE_WITH_SUPABASE_ANON_KEY"
+      - key: ALLOWED_ORIGINS
+        value: "https://your-frontend-domain.vercel.app"
