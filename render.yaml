@@ -19,4 +19,4 @@ services:
       - key: SUPABASE_ANON_KEY
         value: "REPLACE_WITH_SUPABASE_ANON_KEY"
       - key: ALLOWED_ORIGINS
-        value: "https://your-frontend-domain.vercel.app"
+        value: "https://essai-music.vercel.app/"
